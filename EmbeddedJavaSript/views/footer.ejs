@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <header></header>
+    <body>
+        <h1><%= data.title %></h1>
+        <p>Current seconds <%= data.seconds %> </p>
+        <ul>
+            <% if(data.seconds %2 === 0) { %> 
+            <% data.items.forEach(item => { %>
+            <li><%= item %></li>
+        <%}) %>
+        <% }else{%>
+            <p>No items to display</p>
+         <% } %>   
+        </ul>
+    </body>
+    <footer>
+        <p><%= data.htmlContent %></p>
+        <p>Copyright @ from Ejs</p>
+    </footer>
+</html>
