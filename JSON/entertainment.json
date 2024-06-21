@@ -1,0 +1,117 @@
+[
+    {
+      "id": "01",
+      "type": "entertainment",
+      "name": "Football",
+      "price": 2.99,
+      "equipments": {
+        "wears": {
+          "name": "Jersey",
+          "preparation": "boot"
+        },
+        "club": {
+          "name": "chelsea",
+          "spiciness": "Good club"
+        },
+        "footballer": [
+          {
+            "name": "Cole Palmer",
+            "age": "Age: 21",
+            "position": "forward"
+          },
+          {
+            "name": "Nicolas Jackson",
+            "age": "Age: 20",
+            "position": "forward"
+          },
+          {
+            "name": "Enzo Fernandez",
+            "age": "Age: 24",
+            "position": "midfielder"
+          },
+          {
+            "name": "Moises Caicedo",
+            "age": "Age: 20",
+            "position": "midfielder"
+          }
+        ]
+      }
+    },
+    {
+        "id": "02",
+        "type": "entertainment",
+        "name": "Music",
+        "price": 2.99,
+        "equipments": {
+          "wears": {
+            "name": "Clothes",
+            "preparation": "Shoes"
+          },
+          "club": {
+            "name": "MAVIN",
+            "spiciness": "Amazing Label"
+          },
+          "footballer": [
+            {
+              "name": "DON JAZZY",
+              "age": "Age: 45",
+              "position": "BOSS"
+            },
+            {
+              "name": "Rema",
+              "age": "Age: 24",
+              "position": "Top artist"
+            },
+            {
+              "name": "Tiwa Savage",
+              "age": "Age: 43",
+              "position": "Top artist (Mama Mavin)"
+            },
+            {
+              "name": "Arya Starr",
+              "age": "Age: 20",
+              "position": "Signee"
+            }
+          ]
+        }
+    },
+    {
+        "id": "03",
+        "type": "entertainment",
+        "name": "Football",
+        "price": 2.99,
+        "equipments": {
+          "wears": {
+            "name": "Jersey",
+            "preparation": "boot"
+          },
+          "club": {
+            "name": "Man United",
+            "spiciness": "Good club"
+          },
+          "footballer": [
+            {
+              "name": "Marcus Rashford",
+              "age": "Age: 25",
+              "position": "forward"
+            },
+            {
+              "name": "Andre Onana",
+              "age": "Age: 26",
+              "position": "Goal Keeper"
+            },
+            {
+              "name": "Alejandro Garnacho",
+              "age": "Age: 23",
+              "position": "Forward"
+            },
+            {
+              "name": "Mason Mount",
+              "age": "Age: 20",
+              "position": "midfielder"
+            }
+          ]
+        }
+    }   
+  ]
+  

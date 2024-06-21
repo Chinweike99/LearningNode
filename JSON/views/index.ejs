@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Json Exercise</title>
+        <link rel="stylesheet" href="/styles/styling.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>ENTERTAINMENT</h1>
+
+        <form action="/game" method="POST" class="buttons">
+            <button type="submit" value="chelsea" name="chosen">CHELSEA</button>
+            <button type="submit" value="mavin" name="chosen">MAVIN</button>
+            <button type="submit" value="manu" name="chosen">MAN U</button>
+        </form>
+
+        <div class="container">
+            <% if (locals.entertainment) { %>
+            <h2>
+                <%= entertainment.name %>
+            </h2>
+            <h3>entertainment :</h3>
+            <ul>
+                <li>
+                    <%= entertainment.equipments.wears.name %>, <%= entertainment.equipments.wears.preparation %>
+                </li>
+                <li>
+                    <%= entertainment.equipments.club.name %>, <%= entertainment.equipments.club.spiciness %>
+                </li>
+                <% entertainment.equipments.footballer.forEach(baller=> { %>
+                    <li>
+                        <%= baller.name %>, <%= baller.position %>, <%= baller.age %>
+                    </li>
+                    <% }) %>
+            </ul>
+
+            <% } else { %>
+                <h2>Pick an Option</h2>
+                <% } %>
+
+
+        </div>
+
+    </body>
+</html>
