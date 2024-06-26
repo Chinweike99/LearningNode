@@ -5,28 +5,28 @@
         <link rel="stylesheet" href="/styles/styles.css">
     </head>
     <body>
-        <form action="/">
+        <form action="/" method="post">
             <div>
                 <h4>Select Category</h4>
                 <div class="category">
                     <span>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="category" value="programming" id="">
                         <label for="">Programming</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="category" value="music" id="">
                         <label for="">Music</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="category" value="dark" id="">
                         <label for="">Dark</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="category" value="pun" id="">
                         <label for="">Pun</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="category" value="spooky" id="">
                         <label for="">Spooky</label>
                     </span>
                 </div>
@@ -82,6 +82,12 @@
                 <h4>Search for a joke</h4>
                 <input type="text" placeholder="optional">
             </div>
+            <input type="submit" name="submit" value="POST" formaction="/postresponse">
         </form>
+        <%  if (choice) { %>
+        <p>
+            <%= choice %>
+        </p>
+        <% } %>
     </body>
 </html>

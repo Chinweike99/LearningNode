@@ -33,3 +33,7 @@ h4{
     outline: none;
     height: 25px;
 }
+form .post{
+    margin-left: -350px;
+    font-size: 30px;
+}
