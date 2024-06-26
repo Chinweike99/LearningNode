@@ -2,40 +2,85 @@
 <html>
     <head>
         <title>API requests to JokeAPI</title>
-        <link rel="stylesheet" href="../public/styles/">
+        <link rel="stylesheet" href="/styles/styles.css">
     </head>
     <body>
         <form action="/">
             <div>
-                <p>Select Category</p>
-                <span>
-                    <label for="">Programming</label>
-                    <input type="checkbox" name="" id="">
-                </span>
-                <span>
-                    <label for="">Music</label>
-                    <input type="checkbox" name="" id="">
-                </span>
-                <span>
-                    <label for="">Dark</label>
-                    <input type="checkbox" name="" id="">
-                </span>
-                <span>
-                    <label for="">Pun</label>
-                    <input type="checkbox" name="" id="">
-                </span>
-                <span>
-                    <label for="">Spooky</label>
-                    <input type="checkbox" name="" id="">
-                </span>
+                <h4>Select Category</h4>
+                <div class="category">
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Programming</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Music</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Dark</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Pun</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Spooky</label>
+                    </span>
+                </div>
             </div>
-            <div>
-                <p>Select Language</p>
-                <select name="" id="" >
+            <div class="select">
+                <h4>Select Language</h4>
+                <select name="" id="select" >
                     <option value="">en-Eng</option>
                     <option value="">de-Germ</option>
                     <option value="">Ru-Russian</option>
                 </select>
+            </div>
+            <div class="select">
+                <h4>Select flags to blacklist (optional)</h4>
+                <div class="category">
+                    
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">nsfw</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Religion</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Political</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Racist</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Sexist</label>
+                    </span>
+                </div>
+            </div>
+            <div class="select">
+                <h4>Select at least one joke type </h4>
+                <div class="category">
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Single</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Two-part</label>
+                    </span>
+                </div>
+            </div>
+            <div class="select">
+                <h4>Search for a joke</h4>
+                <input type="text" placeholder="optional">
             </div>
         </form>
     </body>

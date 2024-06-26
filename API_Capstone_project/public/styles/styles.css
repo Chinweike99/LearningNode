@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(213, 178, 178);
+    text-align: center;
+}
+form{
+    margin: 50px 150px;
+    text-align: center;
+}
+form div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.category span{
+    margin: 0 6px;
+}
+h4{
+    margin-right: 40px;
+    padding: 0;
+    width: 200px;
+    text-align: left;
+}
+.select{
+    margin: 10px 0;
+}
+.select select{
+    outline: none;
+    height: 25px;
+}
