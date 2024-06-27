@@ -1,5 +1,7 @@
 **Capstone project**
+
 creating the capstone project on my API learnings, while incoporating ejs Knowledge.
+
 *CSS is not the focus for this project*
 
 **Overview**
