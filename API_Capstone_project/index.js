@@ -8,14 +8,11 @@ const url = "https://v2.jokeapi.dev";
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
-
 // let advices = [];
 
 app.get('/', (req, res) => {
     res.render('index.ejs', { choice: "API contents"})
 });
-
-
 app.post('/postresponse', async (req, res) => {
     const category = req.body.category
    let choice ='';
