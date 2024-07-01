@@ -10,14 +10,16 @@
             <h1>MY BLOG</h1>
             <a href="/new" id="newPostbtn"> New Post</a>
             <ul id="postList">
-                <% posts.forEach(post=> {%>
+                <% content.forEach(post=> {%>
                     <li>
                         <h2><%= post.title %></h2>
                         <em><%= post.date %></em>
                         <p><%= post.content %></p>
                         <em>By: <%= post.author %></em>
-                        <a class="style" href="/edit/<%= post.id %>">Edit</a>
-                        <a class="remove" href="/api/posts/delete/<%= post.id %>">Delete</a>
+                        <span>
+                            <a class="style" href="/edit/<%= post.id %>">Edit</a>
+                            <a class="remove" href="/api/posts/delete/<%= post.id %>">Delete</a>
+                        </span>
                     </li>
                     <% }) %>
             </ul>

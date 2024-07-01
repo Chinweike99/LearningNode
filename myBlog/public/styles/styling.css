@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(72, 234, 239);
+    background: rgb(200, 241, 241);
 }
 .container{
     margin: 10% 20%;
@@ -13,15 +13,19 @@ body{
     margin-bottom: 10px;
 }
 
-.container #newPostbtn{
+.container #newPostbtn, .style, .remove{
     text-decoration: none;
     margin-top: 25px;
-    padding: 5px;
+    padding: 7px;
     font-size: 16px;
     font-weight: 600;
     border: 0 none grey;
+    border-radius: 2px;
     background-color: rgb(16, 138, 16);
     color: #fff;
+}
+.remove{
+    background-color: rgb(171, 4, 4);
 }
 
 .container #newPost{
@@ -55,4 +59,21 @@ body{
 .container #newPost button:hover{
     background: #080808;
     color: #fff;
+}
+.container ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.container ul li p{
+    text-align: justify;
+}
+.container ul li {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
 }

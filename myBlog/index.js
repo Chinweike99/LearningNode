@@ -60,7 +60,20 @@ app.get("/posts/:id", (req, res) => {
     res.json(getId);
 })
 
-
+// Create a new Post
+app.post('/posts', (req, res)=> {
+    const addId = lastId += 1;
+    const post = {
+        id: addId,
+        title: req.body.title,
+        content: req.body.content,
+        author: req.body.author,
+        date: new Date(),
+    };
+    lastId = addId;
+    blogPost.push(post);
+    res.status(201).json(post);
+});
 
 app.listen(port, (req, res) => {
     console.log(port);
