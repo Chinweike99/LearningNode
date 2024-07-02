@@ -42,6 +42,30 @@ app.get('/edit/:id', async (req, res) => {
     }
 })
 
+// Save and post created New post
+app.post("/api/posts", async(req, res) => {
+    try {
+        const result = await axios.post(`${URL}/posts`, req.body);
+        console.log(result.data);
+        res.redirect("/");
+    }catch(error) {
+        res.status(500).json({message: error.message})
+    }
+});
+
+// Partially update a post
+app.post("/api/posts/:id", async(req, res) => {
+    console.log("Updated ...");
+    try{
+        const result = await axios.patch(`${URL}/posts/${req.params.id}`, req.body);
+        console.log(result.data);
+        res.redirect("/");
+    } catch (error){
+        res.status(500).json(({message: error.message }))
+    }
+})
+
+
 app.listen(port, () => {
     console.log(`Listening to PORT: ${port}`);
 })

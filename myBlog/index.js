@@ -75,6 +75,18 @@ app.post('/posts', (req, res)=> {
     res.status(201).json(post);
 });
 
+// PATCH a post
+app.patch("/posts/:id", (req, res) => {
+    const post = blogPost.find((p) => p.id === parseInt(req.params.id));
+    if (!post) return res.status(404).json({ message: error.message});
+
+    if (req.body.title) post.title = req.body.title;
+    if (req.body.content) post.content = req.body.content;
+    if (req.body.author) post.author = req.body.author;
+
+    res.json(post);
+})
+
 app.listen(port, (req, res) => {
     console.log(port);
 })

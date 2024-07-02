@@ -28,6 +28,7 @@ body{
     background-color: rgb(171, 4, 4);
 }
 
+/* newPost Styling */
 .container #newPost{
     display: flex;
     flex-direction: column;
@@ -76,4 +77,38 @@ body{
     border: 1px solid #ccc; 
     border-radius: 5px; 
     margin-bottom: 10px; 
+}
+
+/* formEdit Styling */
+.container #formEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+}
+.container #formEdit input{
+    height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px;
+    border: none;
+    outline: none;
+}
+.container #formEdit textarea{
+    background-color: rgb(252, 252, 252);
+    border: none;
+    outline: none;
+    padding: 14px;
+}
+.container #formEdit button{
+    padding-top: -10px;
+    height: 30px;
+    outline: none;
+    border: none;
+    width: 120px;
+    font-size: 18px;
+    align-self: center;
+}
+.container #formEdit button:hover{
+    background: #080808;
+    color: #fff;
 }
