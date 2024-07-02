@@ -87,6 +87,15 @@ app.patch("/posts/:id", (req, res) => {
     res.json(post);
 })
 
+// DELETE a specific post
+app.delete("/posts/:id", (req, res) => {
+    const indextoDelete = blogPost.findIndex((p) => p.id === parseInt(req.params.id));
+    if(indextoDelete === -1) return res.status(404).json({ message: error.message});
+    blogPost.splice(indextoDelete, 1);
+    res.json({ message: "Post deleted "})
+})
+
+
 app.listen(port, (req, res) => {
     console.log(port);
 })

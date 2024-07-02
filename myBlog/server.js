@@ -65,6 +65,17 @@ app.post("/api/posts/:id", async(req, res) => {
     }
 })
 
+// Delete a post 
+app.get("/api/posts/delete/:id", async(req, res) => {
+    try{
+        await axios.delete(`${URL}/posts/${req.params.id}`);
+        res.redirect("/");
+    }catch (error) {
+        res.status(500).json({message: error.message})
+    }
+});
+
+
 
 app.listen(port, () => {
     console.log(`Listening to PORT: ${port}`);

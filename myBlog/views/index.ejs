@@ -13,8 +13,8 @@
                 <% content.forEach(post=> {%>
                     <li>
                         <h2><%= post.title %></h2>
-                        <em><%= post.date %></em>
                         <p><%= post.content %></p>
+                        <em><%= post.date %></em>
                         <em>By: <%= post.author %></em>
                         <span>
                             <a class="style" href="/edit/<%= post.id %>">Edit</a>
