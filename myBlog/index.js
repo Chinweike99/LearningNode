@@ -56,7 +56,7 @@ app.get('/posts', (req, res) => {
 // Get a particular post by its id
 app.get("/posts/:id", (req, res) => {
     const getId = blogPost.find((post) => post.id === parseInt(req.params.id));
-    if (!getId) return res.status(404).json({message: "No post for the is"});
+    if (!getId) return res.status(404).json({message: "No post for the id"});
     res.json(getId);
 })
 
@@ -94,7 +94,6 @@ app.delete("/posts/:id", (req, res) => {
     blogPost.splice(indextoDelete, 1);
     res.json({ message: "Post deleted "})
 })
-
 
 app.listen(port, (req, res) => {
     console.log(port);
